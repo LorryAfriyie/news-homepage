@@ -1,0 +1,24 @@
+// FONT IMPORT
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+// STYLESHEET IMPORTS
+@import "NewsPage";
+@import "Navbar";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
