@@ -1,42 +1,63 @@
 import { useRef } from "react";
 
+// Navbar link items
 const navLinks = [
-  { id: 1, title: "Home", className: "nav-item" },
-  { id: 2, title: "New", className: "nav-item" },
-  { id: 3, title: "Popular", className: "nav-item" },
-  { id: 4, title: "Trending", className: "nav-item" },
-  { id: 5, title: "Categories", className: "nav-item" },
+  { id: 1, title: "Home", className: "nav-link" },
+  { id: 2, title: "New", className: "nav-link" },
+  { id: 3, title: "Popular", className: "nav-link" },
+  { id: 4, title: "Trending", className: "nav-link" },
+  { id: 5, title: "Categories", className: "nav-link" },
 ];
 
 export const Navbar = () => {
+  // Used to access the navbar menu DOM
   const menu = useRef(null);
 
+  // Hamburger icon to open the menu
   const openMenu = () => {
     menu.current.style.width = "270px";
   };
 
-  const close = () => {
+  // Times icon to close the menu
+  const closeMenu = () => {
     menu.current.style.width = "0";
   };
-  
+
   return (
     <nav className="navbar">
-      <div className="brand">
+      {/* Logo */}
+      <div className="navbar__brand">
         <img src="./images/logo.svg" alt="logo.svg" />
       </div>
 
-      <a href="#" className="toggle-button" onClick={openMenu}>
+      {/* Hamburger icon */}
+      <button
+        className="navbar__menu-button"
+        onClick={openMenu}
+        width={"28px"}
+        height={"27px"}
+        aria-expanded={"false"}
+      >
         <img src="./images/icon-menu.svg" alt="icon-menu.svg" />
-      </a>
+      </button>
 
-      <div className="navbar-links" ref={menu}>
-        <a href="#" className="close-btn" onClick={close}>
-          <img src="./images/icon-menu-close.svg" alt="icon-menu-close.svg" />
-        </a>
-        <ul>
+      {/* Navigation menu */}
+      <div className="navbar__navbar-menu" ref={menu}>
+        {/* Times icon */}
+        <button className="navbar__close-btn" onClick={closeMenu}>
+          <img
+            src="./images/icon-menu-close.svg"
+            alt="icon-menu-close.svg"
+            width={"28px"}
+            height={"27px"}
+          />
+        </button>
+
+        {/* Navigation link list items */}
+        <ul className="navbar__navbar-items">
           {navLinks.map((x) => {
             return (
-              <li key={x.id}>
+              <li key={x.id} className="navbar__navbar-links">
                 <a href="#" className={x.className}>
                   {x.title}
                 </a>
