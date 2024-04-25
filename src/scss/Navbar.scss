@@ -4,20 +4,33 @@
   align-items: center;
 
   &__menu-button {
-    position: absolute;
-    display: none;
+    background: none;
+    border: none;
+    padding: 0;
+    /* position: absolute;
     flex-direction: column;
     justify-content: space-between;
-    right: 2rem;
+    right: 2rem; */
+  }
+
+  &__menu-button[aria-expanded="true"] {
+    + .navbar__navbar-menu {
+      translate: 40vw 0;
+    }
   }
 
   &__close-btn {
-    display: none;
+    display: block;
     background: none;
     border: none;
     padding: 0;
     margin-inline-start: auto;
-    margin-block-end: 8rem;
+    margin-block-end: 5rem;
+    margin-right: 10rem;
+
+    img {
+      width: 2.5rem;
+    }
   }
 
   &__navbar-items {
@@ -46,7 +59,35 @@
 @media (width < 40em) {
   .navbar {
     &__navbar-menu {
+      position: fixed;
+      inset: 0;
+      padding: 1.5rem;
+      background-color: hsl(36, 100%, 99%);
+      translate: 100vw 0;
+      transition: translate 0.5s ease-in-out;
+      z-index: 1;
+    }
+
+    &__navbar-items {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (width >= 40em) {
+  .navbar {
+    &__menu-button,
+    &__close-btn {
       display: none;
+    }
+  }
+}
+
+// Surface Duo media query to space out close button from touching the end of the screen
+@media (width = 540px) {
+  .navbar {
+    &__close-btn {
+      margin-right: 14rem;
     }
   }
 }
