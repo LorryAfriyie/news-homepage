@@ -1,0 +1,10 @@
+.headline {
+  .img::before {
+    //content: url("/images/image-web-3-desktop.jpg");
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -50,9 +50,9 @@ export const Navbar = () => {
     }, 500);
   };
 
-  useEffect(() => {
+  /* useEffect(() => {
     setupTopNav(media);
-  }, [media]);
+  }, [media]); */
 
   return (
     <nav className="navbar">

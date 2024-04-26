@@ -91,3 +91,12 @@
     }
   }
 }
+
+// Galaxy Z Fold media query to space out close button from touching the end of the screen
+@media (width = 344px) {
+  .navbar {
+    &__close-btn {
+      margin-right: 8.5rem;
+    }
+  }
+}
