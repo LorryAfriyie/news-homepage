@@ -7,7 +7,7 @@ export const NewNews = () => {
           {newNewsData.map((x) => {
             return (
               <li className="new-news__items" key={x.id}>
-                <h2>{x.title}</h2>
+                <h3>{x.title}</h3>
                 <p>{x.post}</p>
               </li>
             );

@@ -2,13 +2,17 @@ export const Headline = () => {
   const data = headlineData[0];
   return (
     <section className="headline">
-      <div className="img" />
-      <div className="grid">
-        <div className="col">
+      <div className="headline__img" />
+
+      <div className="headline__grid">
+        <div className="headline__col">
           <h1>{data.heading}</h1>
         </div>
-        <div className="col">
+
+        <div className="headline__col">
           <p>{data.post}</p>
+
+          <button className="headline__btn">Read more</button>
         </div>
       </div>
     </section>
