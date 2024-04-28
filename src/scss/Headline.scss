@@ -1,4 +1,10 @@
 .headline {
+  &__img {
+    content: url("./images/image-web-3-desktop.jpg");
+    width: 100%;
+    height: auto;
+  }
+
   &__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
