@@ -1,0 +1,21 @@
+.top-news {
+  padding-top: 5rem;
+
+  .top-news-grid {
+    display: flex;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+
+    /* .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .picture {
+        img {
+          height: 150px;
+          width: auto;
+        }
+      }
+    } */
+  }
+}
