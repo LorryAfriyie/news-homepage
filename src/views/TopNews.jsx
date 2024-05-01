@@ -12,10 +12,10 @@ export const TopNews = () => {
               <div className="picture">
                 <img src={x.img} alt={x.img} />
               </div>
-              
+
               <div className="news-details">
                 <h2>0{x.id}</h2>
-                <h2>{x.title}</h2>
+                <p>{x.title}</p>
                 <p>{x.post}</p>
               </div>
             </div>
