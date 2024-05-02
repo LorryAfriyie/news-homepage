@@ -1,4 +1,4 @@
-import img1 from "/images/image-gaming-growth.jpg";
+import img1 from "/images/image-retro-pcs.jpg";
 import img2 from "/images/image-top-laptops.jpg";
 import img3 from "/images/image-gaming-growth.jpg";
 
@@ -15,8 +15,8 @@ export const TopNews = () => {
 
               <div className="news-details">
                 <h2>0{x.id}</h2>
-                <p>{x.title}</p>
-                <p>{x.post}</p>
+                <p className="title">{x.title}</p>
+                <p className="post">{x.post}</p>
               </div>
             </div>
           );
