@@ -6,10 +6,12 @@ export const NewNews = () => {
         <ul className="new-news__list">
           {newNewsData.map((x) => {
             return (
-              <li className="new-news__items" key={x.id}>
-                <h3>{x.title}</h3>
-                <p>{x.post}</p>
-              </li>
+              <div key={x.id}>
+                <li className="new-news__items">
+                  <h3>{x.title}</h3>
+                  <p>{x.post}</p>
+                </li>
+              </div>
             );
           })}
         </ul>
