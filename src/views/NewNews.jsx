@@ -3,6 +3,7 @@ export const NewNews = () => {
     <section className="new-news">
       <div className="new-news__topic">
         <h1>New</h1>
+
         <ul className="new-news__list">
           {newNewsData.map((x) => {
             return (
@@ -11,6 +12,7 @@ export const NewNews = () => {
                   <h3>{x.title}</h3>
                   <p>{x.post}</p>
                 </li>
+                <div className="new-news__border"></div>
               </div>
             );
           })}
