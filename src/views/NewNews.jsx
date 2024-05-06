@@ -12,7 +12,6 @@ export const NewNews = () => {
                   <h3>{x.title}</h3>
                   <p>{x.post}</p>
                 </li>
-                <div className="new-news__border"></div>
               </div>
             );
           })}
