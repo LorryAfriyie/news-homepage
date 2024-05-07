@@ -8,10 +8,12 @@ export const NewNews = () => {
           {newNewsData.map((x) => {
             return (
               <div key={x.id}>
+                {x.id % 2 == 0 ? <div className="new-news__border"></div> : ""}
                 <li className="new-news__items">
                   <h3>{x.title}</h3>
                   <p>{x.post}</p>
                 </li>
+                {x.id % 2 == 0 ? <div className="new-news__border"></div> : ""}
               </div>
             );
           })}
@@ -36,5 +38,5 @@ const newNewsData = [
     id: 3,
     title: "Is VC Funding Drying Up?",
     post: "Private funding by VC firms is down 50% YOY. We take a look at what that means.",
-  },
+  }
 ];

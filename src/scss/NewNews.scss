@@ -1,6 +1,6 @@
 .new-news {
   background-color: hsl(240, 100%, 5%);
-  padding: 1rem;
+  padding: 1.5rem 1.75rem 0 1.75rem;
 
   h1 {
     color: hsl(35, 77%, 62%);
@@ -15,7 +15,8 @@
 
   &__border {
     display: block;
-    border: 1px solid #cacbe0;
+    border-top: 1px solid #cacbe0;
+    padding: 0 0 0.5rem 0;
   }
 
   &__items {
