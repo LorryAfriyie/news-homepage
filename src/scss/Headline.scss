@@ -10,10 +10,12 @@
   &__grid {
     padding: 0.75rem 0 0 0;
     display: grid;
+    gap: 1rem;
   }
 
   &__col {
     display: grid;
+
     h1 {
       font-size: 3.5rem;
       margin-block-start: 0;
@@ -22,7 +24,7 @@
     }
 
     p {
-      line-height: 1.5;
+      line-height: 2;
       margin-block-start: 0;
       color: #4f4c53;
     }
@@ -40,6 +42,7 @@
     letter-spacing: 4px;
     font-weight: 600;
     margin-top: 1rem;
+    margin-bottom: 2.25rem;
   }
 
   &__btn:hover {
@@ -58,6 +61,16 @@
 
     &__grid {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__col {
+      p {
+        line-height: 1.5;
+      }
+    }
+
+    &__btn {
+      margin-bottom: 0;
     }
   }
 }

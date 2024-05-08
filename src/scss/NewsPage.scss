@@ -3,7 +3,7 @@
 
   .wrapper {
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
   }
 }
 
@@ -15,7 +15,7 @@
 
 @media (width < 40em) {
   .news-page-section {
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 2rem 1.25rem 2rem 1.25rem;
   }
 }
 
