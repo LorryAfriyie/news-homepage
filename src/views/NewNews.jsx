@@ -7,7 +7,7 @@ export const NewNews = () => {
         <ul className="new-news__list">
           {newNewsData.map((x) => {
             return (
-              <div key={x.id}>
+              <div key={x.id} className="new-news__news-container-list">
                 {x.id % 2 == 0 ? <div className="new-news__border"></div> : ""}
                 <li className="new-news__items">
                   <h3>{x.title}</h3>
