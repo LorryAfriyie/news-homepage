@@ -15,7 +15,7 @@ export const TopNews = () => {
 
               <div className="news-details">
                 <h1>0{x.id}</h1>
-                <h3 className="title">{x.title}</h3>
+                <h4 className="title">{x.title}</h4>
                 <p className="post">{x.post}</p>
               </div>
             </div>
