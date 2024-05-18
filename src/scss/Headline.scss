@@ -36,7 +36,7 @@
     text-transform: uppercase;
     padding: 1rem;
     width: 11rem;
-    background-color: hsl(240, 100%, 5%);
+    background: hsl(5, 85%, 63%);
     color: white;
     align-self: end;
     letter-spacing: 4px;
@@ -46,7 +46,8 @@
   }
 
   &__btn:hover {
-    background: hsl(5, 85%, 63%);
+    background-color: hsl(240, 100%, 5%);
+    
     cursor: pointer;
   }
 }
