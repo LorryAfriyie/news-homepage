@@ -1,7 +1,7 @@
 .headline {
   &__img {
-    content: url("./images/image-web-3-mobile.jpg");
-    width: 100%;
+    content: url("/images/image-web-3-mobile.jpg");
+    max-width: 100%;
     height: auto;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -47,7 +47,7 @@
 
   &__btn:hover {
     background-color: hsl(240, 100%, 5%);
-    
+
     cursor: pointer;
   }
 }
@@ -55,7 +55,7 @@
 @media (min-width: 40em) {
   .headline {
     &__img {
-      content: url("./images/image-web-3-desktop.jpg");
+      content: url("/images/image-web-3-desktop.jpg");
       padding-top: 0;
       padding-bottom: 1.5rem;
     }

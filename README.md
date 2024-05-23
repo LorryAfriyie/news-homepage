@@ -50,7 +50,7 @@ Mobile view
 ### Links
 
 - Solution URL: [news-homepage-live-solution-URL](https://github.com/LorryAfriyie/news-homepage)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [news-homepage-live-site-URL](https://lorryafriyie.github.io/news-homepage/)
 
 ## My process
 
