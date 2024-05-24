@@ -1,6 +1,6 @@
 .news-page-section {
-  //padding: 3rem 10rem 3rem 10rem;
-  max-width: 1000px;
+  padding: 3rem 0 3rem 0;
+  max-width: 1100px;
 
   .wrapper {
     display: grid;
@@ -10,7 +10,8 @@
 
 @media (width < 70em) {
   .news-page-section {
-    padding: 3rem 5rem 3rem 5rem;
+    max-width: 700px;
+    //padding: 3rem 5rem 3rem 5rem;
   }
 }
 

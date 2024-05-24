@@ -10,7 +10,6 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -63,10 +62,6 @@ Mobile view
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Vite.js](https://vitejs.dev/) - Frontend Tooling
-
-### Continued development
-
-- Future development of this challenge would include conforming the content of the website to larger screen sizes where the content does not look scretched.
 
 ### Useful resources
 
